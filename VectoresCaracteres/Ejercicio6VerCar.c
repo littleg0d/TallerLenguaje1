@@ -25,5 +25,20 @@ int palindromoIterativo(char v[])
 int palindromoPuntero(char *p)
 {
     int i;
-    while (*final
+    char *inicio=p;
+    char *final=p;
+    int longitud=strlen(p);
+    for  (i = 0; i < longitud-1; i++)
+    {
+        final++;
+    }
+    while (inicio<final)    // yo use *inicio!=*final, la ia me recomendo esta opcion pero no se como funciona
+    {
+        if (*inicio!=*final)         
+            return 0;
+        inicio++;
+        final--;
+    }
+    return 1;
+    
 }
