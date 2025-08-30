@@ -1,0 +1,16 @@
+# Carpetas y archivos de VS Code
+.vscode/
+
+# Archivos de compilación / binarios
+*.exe
+*.out
+*.obj
+*.o
+
+# Carpetas de output
+output/
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
